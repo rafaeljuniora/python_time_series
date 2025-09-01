@@ -8,6 +8,16 @@
 ######################################################################
 
 # formate o cabeçalho deste arquivo, depois implemente as funções abaixo e coloque as docstrings
+"""
+Modulo de utilitarios para processamento de dados
+
+Este modulo contem
+funções para manipulação de listas, 
+processamento de texto
+e analise de dados de vendas
+"""
+import re
+from typing import Dict, Tuple, Any
 
 def maximo(nums):
     """O Metodo atual percorre a lista e seleciona o maior numero
@@ -21,9 +31,6 @@ def maximo(nums):
         if num > maior:
             maior = num
     return maior
-
-import re
-from typing import Dict, Tuple, Any
 
 def limpa_texto(s: str) -> str:
     """Transforma todo o texto em minusculo e remove todas as pontuações"""
